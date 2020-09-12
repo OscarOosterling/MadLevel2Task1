@@ -13,8 +13,8 @@ class PlaceAdapter(private val places: List<Place>):RecyclerView.Adapter<PlaceAd
         val placeList = arrayListOf<Place>()
         val binding = ItemPlaceBinding.bind(placeView)
         fun databind(place:Place){
-            binding.textView.text = place.name
-            binding.imageView.setImageResource(place.imageResId)
+            binding.tvPlace.text = place.name
+            binding.ivPlace.setImageResource(place.imageResId)
         }
     }
 
